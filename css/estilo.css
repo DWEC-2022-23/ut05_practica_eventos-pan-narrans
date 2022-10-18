@@ -1,18 +1,38 @@
 body {
-    font-family: arial, helvetica;
-    
-
+  font-family: arial, helvetica;
 }
-#info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
-#info h1 {margin: 0;}
+
+#info {
+  width: 160px;
+  border: thin solid silver;
+  padding: 0.5em;
+  position: fixed;
+}
+
+#info h1 {
+  margin: 0;
+}
 
 a {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 h2 {
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    color:cadetblue
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: cadetblue
+}
+
+div#numero {
+  height: 200px;
+  width: 200px;
+  background-color: blanchedalmond;
+  display: flex;
+}
+
+.ejercicio01 {
+  background-color: aqua !important;
+  font-size: 60px;
+  font-family: sans-serif;
 }
