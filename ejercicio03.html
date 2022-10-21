@@ -14,41 +14,76 @@
 </head>
 
 <body>
+  <main class="container p-2">
 
-  <section class="container p-2">
-    <h1>Ejercicio 03</h1>
-    <p> Realiza una página en Javascript que tenga una caja, queremos que en esa caja... </p>
-    <ul>
-      <li>
-        Al mover el ratón en cualquier punto de la ventana del navegador, se muestre la posición del puntero
-        respecto del navegador y respecto de la página <br>
-        <span class="text-muted"> Ayuda:
-          <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/screenX">e.screen</a>,
-          <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageX">e.page</a>,
-          <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX">e.client</a>
-        </span>
-      </li>
-      <li>
-        Al pulsar cualquier tecla, el mensaje mostrado debe cambiar para indicar el nuevo evento y su
-        información asociada. <br>
-        <span class="text-muted"> (<a
-             href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code">ayuda</a>) </span>
-      </li>
-      <li>
-        Cuando se pulsa un botón del ratón, el color de fondo del cuadro de mensaje debe ser amarillo
-        (#FFFFCC) y cuando se pulsa una tecla, el color de fondo debe ser azul (#CCE6FF). Al volver a mover
-        el ratón, el color de fondo vuelve a ser blanco. <br>
-        El resultado será similar a:
-        <img src="img/ejercicio03.png"
-             alt="ejercicio 03"
-             class="img-fluid">
-      </li>
-    </ul>
-    <p><a class="btn btn-primary"
-         href="index.html">Back to Index</a></p>
-  </section>
+    <article>
+      <h1>Ejercicio 03</h1>
+      <p> Realiza una página en Javascript que tenga una caja, queremos que en esa caja... </p>
+      <ul>
+        <li>
+          Al mover el ratón en cualquier punto de la ventana del navegador, se muestre la posición del puntero
+          respecto del navegador y respecto de la página <br>
+          <span class="text-muted"> Ayuda:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/screenX">e.screen</a>,
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageX">e.page</a>,
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX">e.client</a>
+          </span>
+        </li>
+        <li>
+          Al pulsar cualquier tecla, el mensaje mostrado debe cambiar para indicar el nuevo evento y su
+          información asociada. <br>
+          <span class="text-muted"> (<a
+               href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code">ayuda</a>) </span>
+        </li>
+        <li>
+          Cuando se pulsa un botón del ratón, el color de fondo del cuadro de mensaje debe ser amarillo
+          (#FFFFCC) y cuando se pulsa una tecla, el color de fondo debe ser azul (#CCE6FF). Al volver a mover
+          el ratón, el color de fondo vuelve a ser blanco. <br>
+          El resultado será similar a:
+          <img src="img/ejercicio03.png"
+               alt="ejercicio 03"
+               class="img-fluid">
+        </li>
+      </ul>
+      <p><a class="btn btn-primary"
+           href="index.html">Back to Index</a></p>
+    </article>
 
-  <div id="info"></div>
+    <article id="info">
+      <table class="table">
+        <tr>
+          <td>
+            <div>
+              <h2>Ratón</h2>
+              <p>Navegador <span></span></p>
+              <p>Página <span></span></p>
+            </div>
+          </td>
+
+          <td>
+            <div>
+              <h2>Ratón</h2>
+              <p>Navegador <span id="mClickBrowser"></span></p>
+              <p>Página <span id="mClickPage"></span></p>
+            </div>
+          </td>
+
+          <td>
+            <div>
+              <h2>Teclado</h2>
+              <p>Carácter <span id="char"></span></p>
+              <p>Código <span id="code"></span></p>
+          </td>
+          </div>
+        </tr>
+        <tr>
+          <td>Se mueve el ratón.</td>
+          <td>Se hace click con el ratón.</td>
+          <td>Se pulsa una tecla.</td>
+        </tr>
+      </table>
+    </article>
+  </main>
 
   <script src="js/ejercicio03.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
