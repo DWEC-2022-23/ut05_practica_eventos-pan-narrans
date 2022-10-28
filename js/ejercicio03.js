@@ -4,49 +4,44 @@ body.addEventListener("click", showClick);
 body.addEventListener("mousemove", showMove);
 body.addEventListener("keydown", showKey);
 
+
 // References
-// Move
-const mMoveScreen = document.getElementById("mMoveScreen");
-const mMovePage = document.getElementById("mMovePage");
-const mMoveClient = document.getElementById("mMoveClient");
+const box = document.getElementById("box");
+const title = document.getElementById("title");
+const legend = document.getElementById("legend");
+const p1 = document.getElementById("p1");
+const p2 = document.getElementById("p2");
 
-// Click
-const mClick = document.getElementById("mClick");
-const mClickScreen = document.getElementById("mClickScreen");
-const mClickPage = document.getElementById("mClickPage");
-const mClickClient = document.getElementById("mClickClient");
-
-// Keyboard
-const keyboard = document.getElementById("keyboard");
-const char = document.getElementById("char");
-const code = document.getElementById("code");
 
 // Functions
 function showMove(e) {
-  // Return to white background
-  mClick.classList.remove('infoYellow');
-  keyboard.classList.remove('infoBlue');
+  title.innerHTML = "Ratón";
+  legend.innerHTML = "Se mueve el ratón.";
 
-  mMoveScreen.innerHTML = `[ ${e.screenX}, ${e.screenY} ]`;
-  mMovePage.innerHTML = `[ ${e.pageX}, ${e.pageY} ]`;
-  mMoveClient.innerHTML = `[ ${e.clientX}, ${e.clientY} ]`;
+  p1.innerHTML = `Pantalla : [ ${e.screenX}, ${e.screenY} ]`;
+  p2.innerHTML = `Página   : [ ${e.pageX}, ${e.pageY} ]`;
+
+  box.classList.remove('infoYellow');
+  box.classList.remove('infoBlue');
 }
 
 function showClick(e) {
-  // Background color change
-  mClick.classList.add('infoYellow');
+  title.innerHTML = "Ratón";
+  legend.innerHTML = "Se hace click con el ratón.";
 
-  // Show info
-  mClickScreen.innerHTML = `[ ${e.screenX}, ${e.screenY} ]`;
-  mClickPage.innerHTML = `[ ${e.pageX}, ${e.pageY} ]`;
-  mClickClient.innerHTML = `[ ${e.clientX}, ${e.clientY} ]`;
+  p1.innerHTML = `Pantalla : [ ${e.screenX}, ${e.screenY} ]`;
+  p2.innerHTML = `Página   : [ ${e.pageX}, ${e.pageY} ]`;
+  //`[ ${e.clientX}, ${e.clientY} ]`;
+
+  box.classList.add('infoYellow');
 }
 
 function showKey(e) {
-  // Background color change
-  keyboard.classList.add('infoBlue');
+  title.innerHTML = "Teclado";
+  legend.innerHTML = "Se pulsa una tecla.";
 
-  // Show info
-  char.innerHTML = `"[ ${e.key} ]"`
-  code.innerHTML = `"[ ${e.code} ]"`
+  p1.innerHTML = `Carácter : "[ ${e.key} ]"`;
+  p2.innerHTML = `Código   : "[ ${e.code} ]"`;
+
+  box.classList.add('infoBlue');
 }
