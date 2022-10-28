@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
-<title>Ejercicio 02 Trabajo con eventos ocultar mostrar parrafos</title>
-<link rel="stylesheet" href="css/estilo.css"></style>
+  <meta charset=utf-8 />
+  <title>Ejercicio 02 Trabajo con eventos ocultar mostrar parrafos</title>
+  <link rel="stylesheet"
+        href="css/estilo.css">
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous">
 </head>
-<body>
-<p id="contenidos_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
-<a id="enlace_1" href="#">Ocultar contenidos</a>
-<br />
-<p id="contenidos_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
-<a id="enlace_2" href="#">Ocultar contenidos</a>
-<br />
-<p id="contenidos_3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
-<a id="enlace_3" href="#">Ocultar contenidos</a>
-<script type="" src="js/ejercicio02.js"></script>
+
+<body class="container">
+
+  <section class="container p-2">
+    <h1>Ejercicio 02</h1>
+    <p> A partir de la página web proporcionada, completar el código JavaScript para que: </p>
+    <ul>
+      <li>
+        Cuando se pinche sobre el primer enlace, se oculte su sección relacionada. Observa que los id de
+        enlaces y contenido tienen un formato similar y que el id del enlace corresponde con el id del
+        contenido. <br>
+        <span class="text-muted"> Ejemplo: <i>enlace_1</i> corresponde con <i>contenidos_1</i></span>
+      </li>
+      <li>
+        Cuando se vuelva a pinchar sobre el mismo enlace, se muestre otra vez esa sección de contenidos. <br>
+        <span class="text-muted"> Pista: propiedad style.display o style.visibility </span>
+      </li>
+      <li>
+        Completar el resto de enlaces de la página para que su comportamiento sea idéntico al del primer
+        enlace.
+      </li>
+      <li>
+        Cuando una sección se oculte, debe cambiar el mensaje del enlace asociado. <br>
+        <span class="text-muted"> Pista: propiedad innerHTML </span>
+      </li>
+    </ul>
+    <p><a class="btn btn-primary"
+         href="index.html">Back to Index</a></p>
+  </section>
+
+  <section class="container p-2">
+    <p id="contenidos_1">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+      libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+      vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede.
+      Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus
+      non,
+      mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_1"
+       href="#contenidos_1">Ocultar contenidos</a>
+  </section>
+
+  <section class="container p-2">
+    <p id="contenidos_2">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+      libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+      vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede.
+      Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus
+      non,
+      mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_2"
+       href="#contenidos_2">Ocultar contenidos</a>
+  </section>
+
+  <section class="container p-2">
+    <p id="contenidos_3">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus
+      libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere
+      vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede.
+      Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus
+      non,
+      mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+    <a id="enlace_3"
+       href="#contenidos_3">Ocultar contenidos</a>
+  </section>
+
+  <script src="js/ejercicio02.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+          crossorigin="anonymous"></script>
+
 </body>
+
 </html>

@@ -1,19 +1,51 @@
 body {
-    font-family: arial, helvetica;
-    
-
+  font-family: arial, helvetica;
 }
-#info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
-#info h1 {margin: 0;}
+
+/* #info { width: 160px; border: thin solid silver; padding: 0.5em; position:
+   fixed; }
+
+   #info h1 { margin: 0; } */
+
+#info td {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+#info div {
+  border: 1px solid grey;
+  margin: 5px;
+  padding: 5px;
+}
+
+.infoYellow {
+  background: #FFFFCC;
+}
+
+.infoBlue {
+  background: #CCE6FF;
+}
 
 a {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-h4 {
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    color:cadetblue
+h2 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: cadetblue
+}
+
+div#numero {
+  height: 200px;
+  width: 200px;
+  background-color: blanchedalmond;
+  display: flex;
+}
+
+.ejercicio01 {
+  background-color: aqua !important;
+  font-size: 60px;
+  font-family: sans-serif;
 }
